@@ -10,10 +10,10 @@ module rom (address, sel, data);
 		else begin // If sel is high then execute cases.
 			case (address)
 				3'b000: data = 8'b00000001; // Input 0 maps to output 1
-            3'b001: data = 8'b00000010; // Input 1 maps to output 2
-            3'b010: data = 8'b00000100; // Input 2 maps to output 4
-            3'b011: data = 8'b00001000; // Input 3 maps to output 8
-            default: data = 8'b00000000; // Default case
+            			3'b001: data = 8'b00000010; // Input 1 maps to output 2
+            			3'b010: data = 8'b00000100; // Input 2 maps to output 4
+           			3'b011: data = 8'b00001000; // Input 3 maps to output 8
+            			default: data = 8'b00000000; // Default case
 			endcase
 		end
 	end
