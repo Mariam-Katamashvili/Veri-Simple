@@ -6,7 +6,7 @@ module clock_divider (clk, reset, out);
 	reg [1:0] count_pos; //register to count positive edges
 	reg [1:0] count_neg; //register to count negative edges
   
-   //positive edge counter
+        //positive edge counter
 	always @ (posedge clk) //using posedge to detect rising edges
 	begin 
 		//<= is a non-blocking assignment, which means that the value of count_pos is updated concurrently with the rest of the circuit. 
